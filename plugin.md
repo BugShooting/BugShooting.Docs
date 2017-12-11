@@ -21,9 +21,11 @@ After you've developed your awesome Output you can share it with the whole world
 
 **What you need to do?**
 1. Create a NuGet package including your Output assemblies
-2. Include the tag "bugshooting.plugin.v3.output" in your package
+2. Include the tag "**bugshooting.plugin.v3.output**" in your package
 3. Upload your package to [nuget.org](https://www.nuget.org)
 4. Activate the listing of your package on nuget.org
+
+For example package definitions see Output implementations on [https://github.com/BugShooting](https://github.com/BugShooting).
 
 ## Manual installation
 
