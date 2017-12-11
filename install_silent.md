@@ -4,29 +4,17 @@ Bug Shooting installer supports silent installation and uninstallation.
 
 ### Available Switches
 
-**/?, /HELP**
+**/?, /HELP** | Shows available command line switches.
 
-Shows available command line switches.
+**/SILENT** | Run a silent installation
 
-**/SILENT**
+**/INSTALLPATH** | Path to the install location. Optional.
 
-Run a silent installation
+**/LINKDESKTOP** | Create a link to the desktop. 1=create link, 0=no link. Optional.
 
-**/INSTALLPATH**
+**/LINKAUTOSTART** | Create a link to the "startup" Directory. 1=create link, 0=no link. Optional
 
-Path to the install location. Optional.
-
-**/LINKDESKTOP**
-
-Create a link to the desktop. 1=create link, 0=no link. Optional.
-
-**/LINKAUTOSTART**
-
-Create a link to the "startup" Directory. 1=create link, 0=no link. Optional
-
-**/MULTIUSER**
-
-Multi user installation (e.g. for use with Remote Desktop Services). 1=yes, 0=no. Optional
+**/MULTIUSER** | Multi user installation (e.g. for use with Remote Desktop Services). 1=yes, 0=no. Optional
  
 
 ### Example
