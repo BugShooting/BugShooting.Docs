@@ -1,4 +1,4 @@
-## Installation for Remote Desktop Services
+# Installation for Remote Desktop Services
 
 You can install Bug Shooting in a multi user environment, e.g. for use with Remote Desktop Services.
 
