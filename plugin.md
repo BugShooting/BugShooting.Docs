@@ -15,11 +15,9 @@ The previous versions of the Output API ([V1](https://bugshooting.manuscript.com
 
 For code examples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
 
-## Installation
+## Deploy a NuGet Package
 
-### Deploy a NuGet Package
-
-You can share your awesome Output with the whole world by deploying a NuGet package to [nuget.org](https://www.nuget.org). See also [existing online packages](https://www.nuget.org/packages?q=Tags%3A%22bugshooting.plugin.v3.output%22).
+After you've developed your awesome Output you can share it with the whole world by deploying a NuGet package to [nuget.org](https://www.nuget.org). See also [existing online packages](https://www.nuget.org/packages?q=Tags%3A%22bugshooting.plugin.v3.output%22).
 
 **What you need to do?**
 1. Create a NuGet package including your Output assemblies
@@ -27,7 +25,7 @@ You can share your awesome Output with the whole world by deploying a NuGet pack
 3. Upload your package to [nuget.org](https://www.nuget.org)
 4. Activate the listing of your package on nuget.org
 
-### Manual installation
+## Manual installation
 
 You can also install the Output files manually into Bug Shooting installation.
 
