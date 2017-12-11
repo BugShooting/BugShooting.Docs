@@ -11,6 +11,6 @@ The previous versions of the Output API ([V1](https://bugshooting.manuscript.com
 - Visual Studio (or some other IDE for .NET)
 - Idea for an Output :smile:
 
-### Samples
+### Examples
 
-For samples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
+For code examples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
