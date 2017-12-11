@@ -1,10 +1,16 @@
-## Plugin API
+## Plugin API (Version 3)
 
 Bug Shooting provides an API to create custom Outputs. The API is written in .NET so you can create Outputs by using C# or VB.NET.
 
-The current version of the API is 3
+The previous versions of the Output API ([V1](https://bugshooting.manuscript.com/f/page?W26) and [V2](https://bugshooting.manuscript.com/f/page?W34)) are still supported but will be removed in the future.
 
-The previous versions of the Output API are still supported but will be removed in the future.
+### Requirements
 
-- [Output API Version 1](https://bugshooting.manuscript.com/f/page?W26)
-- [Output API Version 2](https://bugshooting.manuscript.com/f/page?W34)
+- Bug Shooting version 2.16.x or higher
+- .NET Framework 4.5.2
+- Visual Studio (or some other IDE for .NET)
+- Idea for an Output 
+
+### Samples
+
+For samples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
