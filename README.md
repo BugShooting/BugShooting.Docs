@@ -1,3 +1,7 @@
+---
+title: Bug Shooting Output API Vesion 3
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/BugShooting/bugshooting.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
