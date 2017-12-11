@@ -1,10 +1,10 @@
-##Silent Installation	
+##Silent Installation##
 
 Bug Shooting installer supports silent installation and uninstallation.
 
-###Available Switches
+###Available Switches###
 
-**/?, /HELP*
+**/?, /HELP**
 Shows available command line switches.
 
 **/SILENT**
