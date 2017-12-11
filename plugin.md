@@ -31,7 +31,7 @@ For example package definitions see Output implementations on [https://github.co
 
 You can also install the Output files manually into Bug Shooting installation.
 
-1. Navigate to the **Custom Output** directory of Bug Shooting installation (usually **%ProgramData%\Bug Shooting 2\Outputs**).
-2. Create a sub directory inside **Custom Output** directory using name of your choise.
+1. Navigate to the **Outputs** directory of your Bug Shooting installation (usually **%ProgramData%\Bug Shooting 2\Outputs**).
+2. Create a sub directory inside **Outputs** directory using name of your choise.
 3. Copy your Output assembly and all necessary files to this new directory (do not deploy file **BS.Plugin.V3.dll**).
 4. Restart Bug Shooting application.
