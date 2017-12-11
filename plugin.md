@@ -9,7 +9,7 @@ The previous versions of the Output API ([V1](https://bugshooting.manuscript.com
 - Bug Shooting version 2.16.x or higher
 - .NET Framework 4.5.2
 - Visual Studio (or some other IDE for .NET)
-- Idea for an Output 
+- Idea for an Output :smile.
 
 ### Samples
 
