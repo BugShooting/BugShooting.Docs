@@ -29,10 +29,13 @@ For code examples see the open source implementation of various Outputs on [http
 ## <a name="reference"></a>Reference
 
 * BS.Plugin.V3.Common
-  * **ImageData** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    * **xxx** sfsfsfsfdsdf456456sfsdf
-    * **xfggggggxx** sfsfsfs346 46fdsdfsfsdf
-    * **x456xx** sfsf456sfsfdsdfsfsdf
+  * **ImageData** Provides the image data which is send to an Output.
+    * **Images** List of images.
+    * **MergedImage** A merged image of all images from the Images-List.
+    * **Title** Title of the image.
+    * **Note** Note of the image.
+    * **CreateDate** Create date of the image.
+    * **ChangeDate** Change date of the image.
 * BS.Plugin.V3.Output 
   * **IOutput** Provides an interface for an Output entity.
     * **Name** Provides the name of the Output.
