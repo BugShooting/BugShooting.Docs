@@ -1,11 +1,11 @@
 # Plugin API - Version 3
 
-> [Introduction](#introduction)
-> [Requirements](#requirements)
-> [Examples](#examples)
-> [Reference](#reference)
-> [Deploy a NuGet Package](#deploynuget)
-> [Manual installation](#manualinstallation)
+* [Introduction](#introduction)
+* [Requirements](#requirements)
+* [Examples](#examples)
+* [Reference](#reference)
+* [Deploy a NuGet Package](#deploynuget)
+* [Manual installation](#manualinstallation)
 
 ## <a name="introduction"></a>Introduction
 
