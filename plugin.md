@@ -28,6 +28,21 @@ For code examples see the open source implementation of various Outputs on [http
 
 ## <a name="reference"></a>Reference
 
+```csharp
+namespace BS.Plugin.V3.Common
+{
+  public class ImageData
+  {
+    List<Image> Images { get; }
+    Image MergedImage { get; }
+    string Title { get; }
+    string Note { get; }
+    DateTime CreateDate { get; }
+    DateTime ChangeDate { get; }
+  }
+}
+```
+
 **ImageData** *(BS.Plugin.V3.Common)*
 > Provides the image data which is send to an Output.
 
