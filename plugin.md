@@ -34,12 +34,22 @@ namespace BS.Plugin.V3.Common
   // Provides the image data which is send to an Output.
   class ImageData
   {
-    // 
+    // List of images.
     List<Image> Images { get; }
+    
+    // A merged image of all images from the Images-List.
     Image MergedImage { get; }
+    
+    // Title of the image.
     string Title { get; }
+    
+    // Note of the image.
     string Note { get; }
+    
+    // Create date of the image.
     DateTime CreateDate { get; }
+    
+    // Last change date of the image.
     DateTime ChangeDate { get; }
   }
 }
