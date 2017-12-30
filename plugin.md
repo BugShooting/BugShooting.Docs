@@ -20,7 +20,7 @@ For code examples see the open source implementation of various Outputs on [http
 After you've developed your awesome Output you can share it with the whole world by deploying a NuGet package to [nuget.org](https://www.nuget.org). See also [existing online packages](https://www.nuget.org/packages?q=Tags%3A%22bugshooting.plugin.v3.output%22).
 
 **What you need to do?**
-1. Create a NuGet package including your Output assemblies
+1. Create a NuGet package including your Output assemblies (do not include file **BS.Plugin.V3.dll**)
 2. Include the tag "**bugshooting.plugin.v3.output**" in your package
 3. Upload your package to [nuget.org](https://www.nuget.org)
 4. Activate the listing of your package on nuget.org
@@ -29,9 +29,9 @@ For example package definitions see Output implementations on [https://github.co
 
 ## Manual installation
 
-You can also install the Output files manually into Bug Shooting installation.
+You can also install the Output files manually into your Bug Shooting installation.
 
 1. Navigate to the **Outputs** directory of your Bug Shooting installation (usually **%ProgramData%\Bug Shooting 2\Outputs**).
-2. Create a sub directory inside **Outputs** directory using name of your choise.
+2. Create a sub directory inside the **Outputs** directory using name of your choise (exsample **%ProgramData%\Bug Shooting 2\Outputs\MyOutput**).
 3. Copy your Output assembly and all necessary files to this new directory (do not deploy file **BS.Plugin.V3.dll**).
 4. Restart Bug Shooting application.
