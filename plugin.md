@@ -19,16 +19,16 @@ For code examples see the open source implementation of various Outputs on [http
 
 ## Plugin interfaces
 
-* BS.Plugin.V3.dll
- * Common
-  * ImageData *(Class)*
- * Output 
-  * IOutput *(Interface)*
-  * OutputPlugin \<IOputput\> *(Class)*
- * Utilities
-  * AttributeHelper *(Class)*
-  * FileHelper *(Class)*
-  * WebHelper *(Class)*
+- BS.Plugin.V3.dll
+ - Common
+  - ImageData *(Class)*
+ - Output 
+  - IOutput *(Interface)*
+  - OutputPlugin \<IOputput\> *(Class)*
+ - Utilities
+  - AttributeHelper *(Class)*
+  - FileHelper *(Class)*
+  - WebHelper *(Class)*
   
 
 ### Namespace 'BS.Plugin.V3.Output'
