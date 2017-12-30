@@ -31,16 +31,16 @@ For code examples see the open source implementation of various Outputs on [http
 ```csharp
 namespace BS.Plugin.V3.Output
 {
+
   // Provides an interface for an Output entity.
   interface IOutput
   {
     string Name { get; }        // Name of the Output entity.
     string Information { get; } // Additional information of the Output entity.
   }
-}
 
-// Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
-class OutputPlugin<IOutput>
+  // Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
+  class OutputPlugin<IOutput>
   {
     string Name { get; }        // Name of the Output Plugin.
     string Description { get; } // Description of the Output Plugin.
@@ -48,11 +48,11 @@ class OutputPlugin<IOutput>
     Image Image16 { get; }      // Symbol of the Output Plugin (Size 16 x 16 pixels)
     bool Editable { get; }      // Get the value indicating whether the Output is editable by the user.
 
-    IOutput CreateOutput(IWin32Window Owner);
-    IOutput EditOutput(IWin32Window Owner, IOutput Output);
-    OutputValues SerializeOutput(IOutput Output);
-    IOutput DeserializeOutput(OutputValues OutputValues);
-    Task<SendResult> Send(IWin32Window Owner, IOutput Output, ImageData ImageData);
+    IOutput CreateOutput(IWin32Window Owner); // Creates a new Output. This method is called if the user add an Output. This method can contains code for opening a form where the properties of the Output can be entered. If you want to cancel the creation just return null.
+    IOutput EditOutput(IWin32Window Owner, IOutput Output); // Edit an existin Output. This method can contains code for opening a form where the values of the Output can be changed. If you want to cancel the editing just return null.
+    OutputValues SerializeOutput(IOutput Output); // Serialize the Output.
+    IOutput DeserializeOutput(OutputValues OutputValues); // Deserialize and return an instance of an Output.
+    Task<SendResult> Send(IWin32Window Owner, IOutput Output, ImageData ImageData); // Send an image to an Output.
   }
   
 }
