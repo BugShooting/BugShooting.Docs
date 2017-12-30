@@ -3,6 +3,7 @@
 * [Introduction](#introduction)
 * [Requirements](#requirements)
 * [Examples](#examples)
+* [Reference](#reference)
 * [Deploy a NuGet Package](#deploynuget)
 * [Manual installation](#manualinstallation)
 
@@ -25,7 +26,7 @@ For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget pack
 
 For code examples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
 
-## Plugin interfaces
+## <a name="reference"></a>Reference
 
 * BS.Plugin.V3.Common
   * **ImageData** *(Class)*
