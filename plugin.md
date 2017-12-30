@@ -23,11 +23,11 @@ For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget pack
 
 Provides an interface for an Output entity.
 
-+IOutput|Provides the name of the Output.
-  +IOutput|Provides extended information of the Output.
-    +IOutput|Provides extended information of the Output.
-    +IOutput|Provides extended information of the Output.
-  +IOutput|Provides extended information of the Output.
+* IOutput|Provides the name of the Output.
+ * IOutput|Provides extended information of the Output.
+  * IOutput|Provides extended information of the Output.
+  * IOutput|Provides extended information of the Output.
+ * IOutput|Provides extended information of the Output.
     
 
 Name|Provides the name of the Output.
