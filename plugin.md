@@ -55,6 +55,22 @@ namespace BS.Plugin.V3.Common
 }
 ```
 
+```csharp
+namespace BS.Plugin.V3.Common
+{
+  // Provides the image data which is send to an Output.
+  class ImageData
+  {
+    List<Image> Images { get; }  // List of images.
+    Image MergedImage { get; }   // A merged image of all images from the Images-List.
+    string Title { get; }        // Title of the image.
+    string Note { get; }         // Note of the image.
+    DateTime CreateDate { get; } // Create date of the image.
+    DateTime ChangeDate { get; } // Last change date of the image.
+  }
+}
+```
+
 
 **ImageData** *(BS.Plugin.V3.Common)*
 > Provides the image data which is send to an Output.
