@@ -9,11 +9,11 @@
 
 ## <a name="introduction"></a>Introduction
 
-Bug Shooting provides an API to create custom Outputs. The API is written in .NET so you can create Outputs by using C# or VB.NET.
-
-The previous versions of the Output API ([V1](https://bugshooting.manuscript.com/f/page?W26) and [V2](https://bugshooting.manuscript.com/f/page?W34)) are still supported but will be removed in the future.
+Bug Shooting provides a Plugin API to create custom Outputs. The API is written in .NET so you can create Outputs by using C# or VB.NET.
 
 For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
+
+> The previous versions of the Output API ([V1](https://bugshooting.manuscript.com/f/page?W26) and [V2](https://bugshooting.manuscript.com/f/page?W34)) are still supported but will be removed in the future.
 
 ## <a name="requirements"></a>Requirements
 
