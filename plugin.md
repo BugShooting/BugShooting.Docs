@@ -19,6 +19,13 @@ For code examples see the open source implementation of various Outputs on [http
 
 ## Plugin interfaces
 
+BS.Plugin.V3.Utilities.**AttributeHelper**
+
+BS.Plugin.V3.Utilities.**FileHelper**
+
+BS.Plugin.V3.Utilities.**WebHelper**
+
+
 ## Deploy a NuGet Package
 
 After you've developed your awesome Output you can share it with the whole world by deploying a NuGet package to [nuget.org](https://www.nuget.org). See also [existing online packages](https://www.nuget.org/packages?q=Tags%3A%22bugshooting.plugin.v3.output%22).
