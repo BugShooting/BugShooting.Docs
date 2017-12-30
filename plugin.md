@@ -19,11 +19,20 @@ For code examples see the open source implementation of various Outputs on [http
 
 For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
 
-BS.Plugin.V3.Output.**IOutput**
+### IOutput
+
 Provides an interface for an Output entity.
+
++IOutput|Provides the name of the Output.
+  +IOutput|Provides extended information of the Output.
+    +IOutput|Provides extended information of the Output.
+    +IOutput|Provides extended information of the Output.
+  +IOutput|Provides extended information of the Output.
+    
 
 Name|Provides the name of the Output.
 Information|Provides extended information of the Output.
+
 
 BS.Plugin.V3.Utilities.**AttributeHelper**
 
