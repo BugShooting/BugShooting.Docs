@@ -19,14 +19,16 @@ For code examples see the open source implementation of various Outputs on [http
 
 ## Plugin interfaces
 
-### IOutput
+### Namespace 'BS.Plugin.V3.Output'
+
+**IOutput (Interface)**
 
 Provides an interface for an Output entity.
 
 **Name**|Provides the name of the Output.
 **Information**|Provides extended information of the Output.
 
-### OutputPlugin<IOutput>
+**OutputPlugin<IOutput> (Class)**
  
 Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
 
@@ -36,10 +38,17 @@ Provides a generic base class for an Output Plugin. This class provides methods 
 **Image16**|Provides a small logo of the Output Plugin (16 x 16 pixels).
 **Editable**|Get the value indicating whether the Output is editable by the user.
 **CreateOutput**|Creates a new Output. This method is called if the user add an Output. This method can contains code for opening a form where the properties of the Output can be entered. If you want to cancel the creation just return **null**.
-**SerializeOutput**|Serialize the Output properties to OutputValues.
-**DeserializeOutput**|Deserialize and return an instance of an Output from an OutputValues.
+**SerializeOutput**|Serialize the Output properties.
+**DeserializeOutput**|Deserialize and return an instance of an Output.
 **Send**|Send an image to an Output.
 
+### Namespace 'BS.Plugin.V3.Utilities'
+
+**AttributeHelper (Class)**
+
+**FileHelper (Class)**
+
+**WebHelper (Class)**
 
 ## Deploy a NuGet Package
 
