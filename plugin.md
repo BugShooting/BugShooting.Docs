@@ -4,6 +4,8 @@ Bug Shooting provides an API to create custom Outputs. The API is written in .NE
 
 The previous versions of the Output API ([V1](https://bugshooting.manuscript.com/f/page?W26) and [V2](https://bugshooting.manuscript.com/f/page?W34)) are still supported but will be removed in the future.
 
+For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
+
 ## Requirements
 
 - Bug Shooting version 2.16.x or higher
@@ -16,8 +18,6 @@ The previous versions of the Output API ([V1](https://bugshooting.manuscript.com
 For code examples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
 
 ## Plugin interfaces
-
-For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
 
 ### IOutput
 
