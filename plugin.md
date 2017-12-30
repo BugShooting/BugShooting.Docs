@@ -35,24 +35,56 @@ namespace BS.Plugin.V3.Output
   // Provides an interface for an Output entity.
   interface IOutput
   {
-    string Name { get }        // Name of the Output entity.
-    string Information { get } // Additional information of the Output entity.
+  
+    // Name of the Output entity.
+    string Name { get }
+    
+    // Additional information of the Output entity.
+    string Information { get }
+
   }
 
-  // Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
+  // Provides a generic base class for an Output Plugin.
+  // This class provides methods for managing the IOutput.
   class OutputPlugin<IOutput>
   {
-    string Name { get }        // Name of the Output Plugin.
-    string Description { get } // Description of the Output Plugin.
-    Image Image64 { get }      // Symbol of the Output Plugin (Size 64 x 64 pixels).
-    Image Image16 { get }      // Symbol of the Output Plugin (Size 16 x 16 pixels)
-    bool Editable { get }      // Get the value indicating whether the Output is editable by the user.
+  
+    // Name of the Output Plugin.
+    string Name { get }
+    
+    // Description of the Output Plugin.
+    string Description { get }
+    
+    // Symbol of the Output Plugin (Size 64 x 64 pixels).
+    Image Image64 { get }
+    
+    // Symbol of the Output Plugin (Size 16 x 16 pixels)
+    Image Image16 { get }
+    
+    // Get the value indicating whether the Output is editable by the user.
+    bool Editable { get }
 
-    IOutput CreateOutput(IWin32Window Owner) // Creates a new Output. This method is called if the user add an Output. This method can contains code for opening a form where the properties of the Output can be entered. If you want to cancel the creation just return null.
-    IOutput EditOutput(IWin32Window Owner, IOutput Output) // Edit an existin Output. This method can contains code for opening a form where the values of the Output can be changed. If you want to cancel the editing just return null.
-    OutputValues SerializeOutput(IOutput Output) // Serialize the Output.
-    IOutput DeserializeOutput(OutputValues OutputValues) // Deserialize and return an instance of an Output.
-    Task<SendResult> Send(IWin32Window Owner, IOutput Output, ImageData ImageData) // Send an image to an Output.
+    // Creates a new Output. This method is called if the user add an Output.
+    // This method can contains code for opening a form where the properties
+    // of the Output can be entered. 
+    // If you want to cancel the creation just return null.
+    IOutput CreateOutput(IWin32Window Owner)
+    
+    // Edit an existin Output. 
+    // This method can contains code for opening a form where the values
+    // of the Output can be changed. 
+    // If you want to cancel the editing just return null.
+    IOutput EditOutput(IWin32Window Owner, IOutput Output)
+    
+    // Serialize the Output.
+    OutputValues SerializeOutput(IOutput Output)
+    
+    // Deserialize and return an instance of an Output.
+    IOutput DeserializeOutput(OutputValues OutputValues)
+    
+    // Send an image to an Output.
+    SendResult Send(IWin32Window Owner, IOutput Output, ImageData ImageData)
+    
   }
   
 }
@@ -63,12 +95,25 @@ namespace BS.Plugin.V3.Common
   // Provides the image data which is send to an Output.
   class ImageData
   {
-    List<Image> Images { get }  // List of images.
-    Image MergedImage { get }   // A merged image of all images from the Images-List.
-    string Title { get }        // Title of the image.
-    string Note { get }         // Note of the image.
-    DateTime CreateDate { get } // Create date of the image.
-    DateTime ChangeDate { get } // Last change date of the image.
+  
+    // List of images.
+    List<Image> Images { get }
+    
+    // A merged image of all images from the Images-List.
+    Image MergedImage { get }
+    
+    // Title of the image.
+    string Title { get }
+    
+    // Note of the image.
+    string Note { get }
+    
+    // Create date of the image.
+    DateTime CreateDate { get }
+    
+    // Last change date of the image.
+    DateTime ChangeDate { get }
+    
   }
   
 }
