@@ -38,9 +38,25 @@ namespace BS.Plugin.V3.Output
     string Information { get; } // Additional information of the Output entity.
   }
 }
-```
 
-```csharp
+// Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
+class OutputPlugin<IOutput>
+  {
+    string Name { get; }        // Name of the Output Plugin.
+    string Description { get; } // Description of the Output Plugin.
+    Image Image64 { get; }      // Symbol of the Output Plugin (Size 64 x 64 pixels).
+    Image Image16 { get; }      // Symbol of the Output Plugin (Size 16 x 16 pixels)
+    bool Editable { get; }      // Get the value indicating whether the Output is editable by the user.
+
+    IOutput CreateOutput(IWin32Window Owner);
+    IOutput EditOutput(IWin32Window Owner, IOutput Output);
+    OutputValues SerializeOutput(IOutput Output);
+    IOutput DeserializeOutput(OutputValues OutputValues);
+    Task<SendResult> Send(IWin32Window Owner, IOutput Output, ImageData ImageData);
+  }
+  
+}
+
 namespace BS.Plugin.V3.Common
 {
 
@@ -53,22 +69,6 @@ namespace BS.Plugin.V3.Common
     string Note { get; }         // Note of the image.
     DateTime CreateDate { get; } // Create date of the image.
     DateTime ChangeDate { get; } // Last change date of the image.
-  }
-  
-  // Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
-  class OutputPlugin<IOutput>
-  {
-    string Name { get; }        // Name of the Output Plugin.
-    string Description { get; } // Description of the Output Plugin.
-    Image Image64 { get; }      // Symbol of the Output Plugin (Size 64 x 64 pixels).
-    Image Image16 { get; }      // Symbol of the Output Plugin (Size 16 x 16 pixels)
-    bool Editable { get; }      // Get the value indicating whether the Output is editable by the user.
-
-    IOutput CreateOutput(IWin32Window Owner);
-    IOutput EditOutput(IWin32Window Owner, IOutput Output);
-    OutputValues SerializeOutput(IOutput Output);
-    TypeOutput DeserializeOutput(OutputValues OutputValues);
-    Task<SendResult> Send(IWin32Window Owner, IOutput Output, ImageData ImageData);
   }
   
 }
