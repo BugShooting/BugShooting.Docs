@@ -49,8 +49,16 @@ For code examples see the open source implementation of various Outputs on [http
     * **Send** Send an image to an Output.
 * BS.Plugin.V3.Utilities
   * **AttributeHelper** XXXXXXXXXXXXXXXXXXXXXX
+    * **GetAttributeReplacements** XXXXXXXXXXXXXXXXXXXXXXX
+    * **ReplaceAttributes** XXXXXXXXXXXXXXXXXXXXXXX
+    * **ReplaceAttributesPreview** XXXXXXXXXXXXXXXXXXXXXXX
   * **FileHelper** XXXXXXXXXXXXXXXX
+      * **GetFileFormats** XXXXXXXXXXXXXXXXXXXXXXX
+      * **GetFileBytes** XXXXXXXXXXXXXXXXXXXXXXX
+      * **GetFileExtention** XXXXXXXXXXXXXXXXXXXXXXX
+      * **GetMimeType** XXXXXXXXXXXXXXXXXXXXXXX
   * **WebHelper** XXXXXXXXXXXXXXXXXXXXXXXX
+    * **OpenUrl** XXXXXXXXXXXXXXXXXXXXXXX
   
 ## <a name="deploynuget"></a>Deploy a NuGet Package
 
