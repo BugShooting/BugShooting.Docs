@@ -79,7 +79,7 @@ namespace BS.Plugin.V3.Output
   {
   
     // Name of the Output Plugin.
-    string Name { get }
+    string **Name** { get }
     
     // Description of the Output Plugin.
     string Description { get }
