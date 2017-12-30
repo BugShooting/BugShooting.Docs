@@ -23,22 +23,22 @@ For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget pack
 
 Provides an interface for an Output entity.
 
-* IOutput|Provides the name of the Output.
- * IOutput|Provides extended information of the Output.
-  * IOutput|Provides extended information of the Output.
-  * IOutput|Provides extended information of the Output.
- * IOutput|Provides extended information of the Output.
-    
+**Name**|Provides the name of the Output.
+**Information**|Provides extended information of the Output.
 
-Name|Provides the name of the Output.
-Information|Provides extended information of the Output.
+### OutputPlugin<IOutput>
+ 
+Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
 
-
-BS.Plugin.V3.Utilities.**AttributeHelper**
-
-BS.Plugin.V3.Utilities.**FileHelper**
-
-BS.Plugin.V3.Utilities.**WebHelper**
+**Name**|Provides the name of the Output Plugin.
+**Description**|Provides the description of the Output Plugin.
+**Image64**|Provides the logo of the Output Plugin (64 x 64 pixels).
+**Image16**|Provides a small logo of the Output Plugin (16 x 16 pixels).
+**Editable**|Get the value indicating whether the Output is editable by the user.
+**CreateOutput**|Creates a new Output. This method is called if the user add an Output. This method can contains code for opening a form where the properties of the Output can be entered. If you want to cancel the creation just return **null**.
+**SerializeOutput**|Serialize the Output properties to OutputValues.
+**DeserializeOutput**|Deserialize and return an instance of an Output from an OutputValues.
+**Send**|Send an image to an Output.
 
 
 ## Deploy a NuGet Package
