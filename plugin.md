@@ -29,6 +29,35 @@ For code examples see the open source implementation of various Outputs on [http
 ## <a name="reference"></a>Reference
 
 ```csharp
+namespace BS.Plugin.V3.Common
+{
+
+  // Provides the image data which is send to an Output.
+  class ImageData
+  {
+  
+    // List of images.
+    List<Image> Images { get }
+    
+    // A merged image of all images from the Images-List.
+    Image MergedImage { get }
+    
+    // Title of the image.
+    string Title { get }
+    
+    // Note of the image.
+    string Note { get }
+    
+    // Create date of the image.
+    DateTime CreateDate { get }
+    
+    // Last change date of the image.
+    DateTime ChangeDate { get }
+    
+  }
+  
+}
+
 namespace BS.Plugin.V3.Output
 {
 
@@ -84,35 +113,6 @@ namespace BS.Plugin.V3.Output
     
     // Send an image to an Output.
     SendResult Send(IWin32Window Owner, IOutput Output, ImageData ImageData)
-    
-  }
-  
-}
-
-namespace BS.Plugin.V3.Common
-{
-
-  // Provides the image data which is send to an Output.
-  class ImageData
-  {
-  
-    // List of images.
-    List<Image> Images { get }
-    
-    // A merged image of all images from the Images-List.
-    Image MergedImage { get }
-    
-    // Title of the image.
-    string Title { get }
-    
-    // Note of the image.
-    string Note { get }
-    
-    // Create date of the image.
-    DateTime CreateDate { get }
-    
-    // Last change date of the image.
-    DateTime ChangeDate { get }
     
   }
   
