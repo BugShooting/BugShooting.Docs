@@ -1,4 +1,4 @@
-# Plugin API (Version 3)
+# Plugin API - Version 3
 
 Bug Shooting provides an API to create custom Outputs. The API is written in .NET so you can create Outputs by using C# or VB.NET.
 
