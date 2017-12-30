@@ -1,8 +1,14 @@
 # Plugin API - Version 3
 
 [Introduction](#introduction)
+
 [Requirements](#requirements)
+
 [Examples](#examples)
+
+[Deploy a NuGet Package](#deploynuget)
+
+[Manual installation](#manualinstallation)
 
 ## <a name="introduction"></a>Introduction
 
@@ -81,7 +87,7 @@ Provides a generic base class for an Output Plugin. This class provides methods 
 
 **WebHelper (Class)**
 
-## Deploy a NuGet Package
+## <a name="deploynuget">Deploy a NuGet Package
 
 After you've developed your awesome Output you can share it with the whole world by deploying a NuGet package to [nuget.org](https://www.nuget.org). See also [existing online packages](https://www.nuget.org/packages?q=Tags%3A%22bugshooting.plugin.v3.output%22).
 
@@ -93,7 +99,7 @@ After you've developed your awesome Output you can share it with the whole world
 
 For example package definitions see Output implementations on [https://github.com/BugShooting](https://github.com/BugShooting).
 
-## Manual installation
+## <a name="manualinstallation">Manual installation
 
 You can also install the Output files manually into your Bug Shooting installation.
 
