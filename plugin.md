@@ -121,42 +121,43 @@ namespace BS.Plugin.V3.Output
 namespace BS.Plugin.V3.Utilities
 {
 
-  // XXXXXXXXXXXXXXXXXXXXXXX
+  // Provides helper methods for file operations.
   class FileHelper
   {
   
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Get the file bytes of an image.
     byte[] GetFileBytes(string FileFormat, ImageData ImageData)
     
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Get the file extention of a file format.
     string GetFileExtention(string FileFormat)
     
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Get supported file formats.
     List<string> GetFileFormats()
     
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Get the mime type of a file format.
     string GetMimeType(string FileFormat)
    
   }
   
-  // XXXXXXXXXXXXXXXXXXXXXXX
+  // Provides helper methods for attribute replacements.
   class AttributeHelper
   {
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Get available attribute replacements.
     IEnumerable<string> GetAttributeReplacements()
 
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Replace attributes in the text and returns the result.
     string ReplaceAttributes(string Text, ImageData ImageData)
     
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Replace attributes in the text and returns the result.
+    // This method does not increase values of counter attributes.
     string ReplaceAttributesPreview(string Text, ImageData ImageData)
   }
   
-  // XXXXXXXXXXXXXXXXXXXXXXX
+  // Provides helper methods for web operations.
   public class WebHelper
   {
   
-    // XXXXXXXXXXXXXXXXXXXXXXX
+    // Open an url in the default browser.
     void OpenUrl(string Url)
     
   }
