@@ -117,6 +117,52 @@ namespace BS.Plugin.V3.Output
   }
   
 }
+
+namespace BS.Plugin.V3.Utilities
+{
+
+  // XXXXXXXXXXXXXXXXXXXXXXX
+  class FileHelper
+  {
+  
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    byte[] GetFileBytes(string FileFormat, ImageData ImageData)
+    
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    string GetFileExtention(string FileFormat)
+    
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    List<string> GetFileFormats()
+    
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    string GetMimeType(string FileFormat)
+   
+  }
+  
+  // XXXXXXXXXXXXXXXXXXXXXXX
+  class AttributeHelper
+  {
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    IEnumerable<string> GetAttributeReplacements()
+
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    string ReplaceAttributes(string Text, ImageData ImageData)
+    
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    string ReplaceAttributesPreview(string Text, ImageData ImageData)
+  }
+  
+  // XXXXXXXXXXXXXXXXXXXXXXX
+  public class WebHelper
+  {
+  
+    // XXXXXXXXXXXXXXXXXXXXXXX
+    void OpenUrl(string Url)
+    
+  }
+  
+}
+
 ```
 
 
