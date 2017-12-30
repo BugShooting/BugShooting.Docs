@@ -28,7 +28,7 @@ For code examples see the open source implementation of various Outputs on [http
 
 ## <a name="reference"></a>Reference
 
-### BS.Plugin.V3.Common.**ImageData** 
+**ImageData** *(BS.Plugin.V3.Common)*
 > Provides the image data which is send to an Output.
 
 * Images** List of images.
