@@ -29,28 +29,13 @@ For code examples see the open source implementation of various Outputs on [http
 ## <a name="reference"></a>Reference
 
 ```csharp
-namespace BS.Plugin.V3.Common
+namespace BS.Plugin.V3.Output
 {
-  // Provides the image data which is send to an Output.
-  class ImageData
+  // Provides an interface for an Output entity.
+  interface IOutput
   {
-    // List of images.
-    List<Image> Images { get; }
-    
-    // A merged image of all images from the Images-List.
-    Image MergedImage { get; }
-    
-    // Title of the image.
-    string Title { get; }
-    
-    // Note of the image.
-    string Note { get; }
-    
-    // Create date of the image.
-    DateTime CreateDate { get; }
-    
-    // Last change date of the image.
-    DateTime ChangeDate { get; }
+    string Name { get; }        // Name of the Output entity.
+    string Information { get; } // Additional information of the Output entity.
   }
 }
 ```
@@ -58,6 +43,7 @@ namespace BS.Plugin.V3.Common
 ```csharp
 namespace BS.Plugin.V3.Common
 {
+
   // Provides the image data which is send to an Output.
   class ImageData
   {
@@ -68,6 +54,25 @@ namespace BS.Plugin.V3.Common
     DateTime CreateDate { get; } // Create date of the image.
     DateTime ChangeDate { get; } // Last change date of the image.
   }
+  
+  // Provides a generic base class for an Output Plugin. This class provides methods for managing the IOutput.
+  class OutputPlugin<TypeOutput> : IOutputPlugin where TypeOutput : IOutput
+  {
+    protected OutputPlugin();
+
+    string Name { get; }        // Name of the Output Plugin.
+    string Description { get; } // Description of the Output Plugin.
+    Image Image64 { get; }      // Symbol of the Output Plugin (Size 64 x 64 pixels).
+    Image Image16 { get; }      // Symbol of the Output Plugin (Size 16 x 16 pixels)
+    bool Editable { get; }      // Get the value indicating whether the Output is editable by the user.
+
+    TypeOutput CreateOutput(IWin32Window Owner);
+    TypeOutput EditOutput(IWin32Window Owner, TypeOutput Output);
+    OutputValues SerializeOutput(TypeOutput objOutput);
+    TypeOutput DeserializeOutput(OutputValues objOutputValues);
+    Task<SendResult> Send(IWin32Window Owner, TypeOutput Output, ImageData ImageData);
+  }
+  
 }
 ```
 
