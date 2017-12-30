@@ -31,36 +31,20 @@ For code examples see the open source implementation of various Outputs on [http
 ```csharp
 namespace BS.Plugin.V3.Common
 {
-  public class ImageData
+  // Provides the image data which is send to an Output.
+  class ImageData
   {
-    public ImageData(List<Image> Images, Image MergedImage, string Title, string Note, DateTime CreateDate, DateTime ChangeDate);
-
-    public List<Image> Images { get; }
-    public Image MergedImage { get; }
-    public string Title { get; }
-    public string Note { get; }
-    public DateTime CreateDate { get; }
-    public DateTime ChangeDate { get; }
+    // 
+    List<Image> Images { get; }
+    Image MergedImage { get; }
+    string Title { get; }
+    string Note { get; }
+    DateTime CreateDate { get; }
+    DateTime ChangeDate { get; }
   }
 }
 ```
 
-```
-namespace BS.Plugin.V3.Common
-{
-  public class ImageData
-  {
-    public ImageData(List<Image> Images, Image MergedImage, string Title, string Note, DateTime CreateDate, DateTime ChangeDate);
-
-    public List<Image> Images { get; }
-    public Image MergedImage { get; }
-    public string Title { get; }
-    public string Note { get; }
-    public DateTime CreateDate { get; }
-    public DateTime ChangeDate { get; }
-  }
-}
-```
 
 **ImageData** *(BS.Plugin.V3.Common)*
 > Provides the image data which is send to an Output.
