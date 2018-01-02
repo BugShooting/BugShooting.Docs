@@ -1,5 +1,3 @@
-<a href="{{ site.url }}">Docs home</a>
-
 # Silent Installation
 
 Bug Shooting installer supports silent installation and uninstallation.
