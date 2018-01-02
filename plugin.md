@@ -172,7 +172,8 @@ namespace BS.Plugin.V3.Utilities
 1. Create a Visual Studio class library project.
 2. Add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
 3. Set **Copy Local** setting of **BS.Plugin.V3** reference to **False**.
-4. 
+4. Create a class implementing BS.Plugin.V3.Output.**IOutput** interface.
+5. Create a class inheriting from BS.Plugin.V3.Output.**OutputPlugin\<TypeOutput\>** class and use the type of yor previously created he generic type 
 
 
 ## <a name="debug"></a>Debug Plugin Code
