@@ -167,11 +167,12 @@ namespace BS.Plugin.V3.Utilities
 }
 ```
 
-## <a name="reference"></a>Reference
+## <a name="develop"></a>Develop an Output Plugin
 
 1. Create a Visual Studio class library project.
-2. A reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
+2. Add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
 3. Set **Copy Local** setting of **BS.Plugin.V3** reference to **False**.
+4. 
 
 
 ## <a name="debug"></a>Debug Plugin Code
