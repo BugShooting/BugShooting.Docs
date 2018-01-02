@@ -174,9 +174,7 @@ If is simpel to debug your Plugin code using Visual Studio.
 2. Create a sub directory inside the Bug Shooting **Outputs** directory using name of your choise (example **%ProgramData%\Bug Shooting 2\Outputs\MyOutput**).
 3. Set the output derectory of your Plugin project to the previously created directory.
 4. Select "**Start external program**" as start action for your Plugin project and set the value to Bug Shooting executable (located here **%ProgramFiles%\Bug Shooting 2\BugShooting2.exe**)
-7. Start debugging of your Plugin project.
-
-XXXXXXXXXXXXXXXXXXXX
+5. Start debugging of your Plugin project.
 
 ## <a name="deploynuget"></a>Deploy a NuGet Package
 
