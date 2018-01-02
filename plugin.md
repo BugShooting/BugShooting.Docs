@@ -185,7 +185,7 @@ If is simpel to debug your Plugin code using Visual Studio.
 After you've developed your awesome Output you can share it with the whole world by deploying a NuGet package to [nuget.org](https://www.nuget.org). See also [existing online packages](https://www.nuget.org/packages?q=Tags%3A%22bugshooting.plugin.v3.output%22).
 
 **What you need to do?**
-1. Create a NuGet package including your Output assemblies (do not include file **BS.Plugin.V3.dll**)
+1. Create a NuGet package including your Output Plugin assemblies (do not include file **BS.Plugin.V3.dll**)
 2. Include the tag "**bugshooting.plugin.v3.output**" in your package
 3. Upload your package to [nuget.org](https://www.nuget.org)
 4. Activate the listing of your package on nuget.org
