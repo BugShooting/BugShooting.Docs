@@ -10,7 +10,7 @@
 
 ## <a name="introduction"></a>Introduction
 
-Bug Shooting provides a Plugin API to create custom Outputs. The API is written in .NET so you can create Outputs by using C# or VB.NET.
+Bug Shooting provides a Plugin API (V3) to create custom Outputs. The API is written in .NET so you can create Outputs by using C# or VB.NET.
 
 For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
 
