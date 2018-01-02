@@ -4,7 +4,7 @@
 * [Requirements](#requirements)
 * [Examples](#examples)
 * [Reference](#reference)
-* [Debug your Plugin](#debug)
+* [Debug Plugin Code](#debug)
 * [Deploy a NuGet Package](#deploynuget)
 * [Manual installation](#manualinstallation)
 
@@ -166,7 +166,14 @@ namespace BS.Plugin.V3.Utilities
 }
 ```
 
-## <a name="debug"></a>Debug your Plugin
+## <a name="debug"></a>Debug Plugin Code
+
+If is simpel to debug your Plugin code.
+
+1. Install Bug Shooting on your developer machine
+2. Create a sub directory inside the Bug Shooting **Outputs** directory using name of your choise (example **%ProgramData%\Bug Shooting 2\Outputs\MyOutput**).
+3. Set the output derectory of your Plugin project to the previously created directory.
+4. Select "**Start external program**" as start action for your Plugin project and set the value to Bug Shooting executable (**%ProgramFiles%\Bug Shooting 2\BugShooting2.exe**)
 
 XXXXXXXXXXXXXXXXXXXX
 
@@ -186,7 +193,7 @@ For example package definitions see Output implementations on [https://github.co
 
 You can also install the Output files manually into your Bug Shooting installation.
 
-1. Navigate to the **Outputs** directory of your Bug Shooting installation (usually **%ProgramData%\Bug Shooting 2\Outputs**).
+1. Navigate to the **Outputs** directory of your Bug Shooting installation (**%ProgramData%\Bug Shooting 2\Outputs**).
 2. Create a sub directory inside the **Outputs** directory using name of your choise (example **%ProgramData%\Bug Shooting 2\Outputs\MyOutput**).
 3. Copy your Output assembly and all necessary files to this new directory (do not deploy file **BS.Plugin.V3.dll**).
 4. Restart Bug Shooting application.
