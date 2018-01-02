@@ -4,6 +4,7 @@
 * [Requirements](#requirements)
 * [Code Examples](#examples)
 * [Reference](#reference)
+* [Develop an Output Plugin](#develop)
 * [Debug Plugin Code](#debug)
 * [Deploy a NuGet Package](#deploynuget)
 * [Manual installation](#manualinstallation)
@@ -166,6 +167,13 @@ namespace BS.Plugin.V3.Utilities
 }
 ```
 
+## <a name="reference"></a>Reference
+
+1. Create a Visual Studio class library project.
+2. A reference to **BS.Plugin.V3.dll** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
+3. Set **Copy Local** setting of **BS.Plugin.V3** reference to **False**.
+
+
 ## <a name="debug"></a>Debug Plugin Code
 
 If is simpel to debug your Plugin code using Visual Studio.
@@ -174,7 +182,8 @@ If is simpel to debug your Plugin code using Visual Studio.
 2. Create a sub directory inside the Bug Shooting **Outputs** directory using name of your choise (example **%ProgramData%\Bug Shooting 2\Outputs\MyOutput**).
 3. Set the output derectory of your Plugin project to the previously created directory.
 4. Select "**Start external program**" as start action for your Plugin project and set the value to Bug Shooting executable (located here **%ProgramFiles%\Bug Shooting 2\BugShooting2.exe**)
-5. Start debugging of your Plugin project.
+5. Make sure the setting **Copy Local** of **BS.Plugin.V3** reference is set **False**.
+6. Start debugging of your Plugin project.
 
 ## <a name="deploynuget"></a>Deploy a NuGet Package
 
