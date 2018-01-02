@@ -1,4 +1,6 @@
-<a href="{{ site.url }}">Docs home</a> - <a href="http://www.bugshooting.com">Homepage</a>
+<a href="{{ site.url }}">Docs home</a> &bull; <a href="http://www.bugshooting.com">Homepage</a>
+
+---
 
 # Installation for Remote Desktop Services
 
