@@ -86,13 +86,13 @@ namespace BS.Plugin.V3.Output
     bool Editable { get }
 
     // Creates a new Output. This method is called if the user add an Output.
-    // This method can contains code for opening a form where the properties
+    // This method can contain code for opening a form where the properties
     // of the Output can be entered. 
     // If you want to cancel the creation just return null.
     IOutput CreateOutput(IWin32Window Owner)
     
     // Edit an existin Output. 
-    // This method can contains code for opening a form where the values
+    // This method can contain code for opening a form where the values
     // of the Output can be changed. 
     // If you want to cancel the editing just return null.
     IOutput EditOutput(IWin32Window Owner, IOutput Output)
