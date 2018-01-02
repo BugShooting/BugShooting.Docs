@@ -97,10 +97,10 @@ namespace BS.Plugin.V3.Output
     // If you want to cancel the editing just return null.
     IOutput EditOutput(IWin32Window Owner, IOutput Output)
     
-    // Serialize the Output.
+    // Gets a list of key-value pairs describing the Output entity.
     OutputValues SerializeOutput(IOutput Output)
     
-    // Deserialize and return an instance of an Output.
+    // Create an instance of an Output entity from passed key-value pairs.
     IOutput DeserializeOutput(OutputValues OutputValues)
     
     // Send an image to an Output.
@@ -116,17 +116,17 @@ namespace BS.Plugin.V3.Utilities
   // Provides helper methods for file operations.
   class FileHelper
   {
-  
-    // Get the file bytes of an image.
+
+    // Get a list of supported file formats.
+    List<string> GetFileFormats()
+
+    // Get the file bytes of an image for a specific file format.
     byte[] GetFileBytes(string FileFormat, ImageData ImageData)
     
-    // Get the file extention of a file format.
+    // Get the file extention for a specific file format.
     string GetFileExtention(string FileFormat)
     
-    // Get supported file formats.
-    List<string> GetFileFormats()
-    
-    // Get the mime type of a file format.
+    // Get the MIME type for a specific file format.
     string GetMimeType(string FileFormat)
    
   }
