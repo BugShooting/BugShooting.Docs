@@ -1,5 +1,3 @@
-<div align="right"><a href="{{ site.url }}">Docs home</a> &bull; <a href="http://www.bugshooting.com">Homepage</a></div>
-
 # Installation for Remote Desktop Services
 
 You can install Bug Shooting in a multi user environment, e.g. for use with Remote Desktop Services.
