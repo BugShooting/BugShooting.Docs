@@ -178,7 +178,7 @@ If is simpel to debug your Plugin code using Visual Studio.
 > Example: %ProgramData%\Bug Shooting 2\Outputs\\**MyOutput**
 3. Set the output derectory of your Plugin project to the previously created directory.
 4. Select "**Start external program**" as start action for your Plugin project and set the value to Bug Shooting executable.
-> Located here: **%ProgramFiles%\Bug Shooting 2\BugShooting2.exe**)
+> Located here: %ProgramFiles%\Bug Shooting 2\\**BugShooting2.exe**
 5. Make sure the setting **Copy Local** of **BS.Plugin.V3** reference is set to **False**.
 6. Start debugging your Plugin project.
 
@@ -188,7 +188,7 @@ After you've developed your awesome Output you can share it with the whole world
 
 **What you need to do?**
 1. Create a NuGet package including your Output Plugin assemblies.
-> Do not include file **BS.Plugin.V3.dll** !
+> Do not include file **BS.Plugin.V3.dll**
 2. Include the tag "**bugshooting.plugin.v3.output**" in your package
 3. Upload your package to [nuget.org](https://www.nuget.org)
 4. Activate the listing of your package on nuget.org
@@ -204,5 +204,5 @@ You can also install the Output files manually into your Bug Shooting installati
 2. Create a sub directory inside the **Outputs** directory using name of your choise.
 > Example: %ProgramData%\Bug Shooting 2\Outputs\\**MyOutput**
 3. Copy your Output assembly and all necessary files to this new directory.
-> Do not deploy file **BS.Plugin.V3.dll** !
+> Do not deploy file **BS.Plugin.V3.dll**
 4. Restart Bug Shooting application.
