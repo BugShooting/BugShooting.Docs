@@ -2,7 +2,7 @@
 
 * [Introduction](#introduction)
 * [Requirements](#requirements)
-* [Examples](#examples)
+* [Code Examples](#examples)
 * [Reference](#reference)
 * [Debug Plugin Code](#debug)
 * [Deploy a NuGet Package](#deploynuget)
@@ -23,7 +23,7 @@ For using the Plugin API add a reference to **BS.Plugin.V3.dll** from Nuget pack
 - Visual Studio (or some other IDE for .NET)
 - Idea for an Output :)
 
-## <a name="examples"></a>Examples
+## <a name="examples"></a>Code Examples
 
 For code examples see the open source implementation of various Outputs on [https://github.com/BugShooting](https://github.com/BugShooting).
 
