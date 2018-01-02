@@ -1,3 +1,5 @@
+<a href="{{ site.url }}">Docs home</a>
+
 # Plugin API - Version 3
 
 * [Introduction](#introduction)
