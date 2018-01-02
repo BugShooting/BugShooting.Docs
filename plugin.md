@@ -176,6 +176,7 @@ namespace BS.Plugin.V3.Utilities
 4. Set **Copy Local** setting of **BS.Plugin.V3** reference to **False**.
 5. Create a class implementing BS.Plugin.V3.Output.**IOutput** interface.
 6. Create a class inheriting from BS.Plugin.V3.Output.**OutputPlugin\<TypeOutput\>** and use the previously created class type for generic parameter.
+7. Fill your Plugin with life. Voilà!
 
 
 ## <a name="debug"></a>Debug Plugin Code
