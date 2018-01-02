@@ -1,4 +1,4 @@
-<a href="{{ site.url }}">Docs home</a> - <a href="bugshooting.com">Homepage</a>
+<a href="{{ site.url }}">Docs home</a> - <a href="http://www.bugshooting.com">Homepage</a>
 
 # Plugin API - Version 3
 
