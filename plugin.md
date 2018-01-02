@@ -159,6 +159,8 @@ namespace BS.Plugin.V3.Utilities
 
 ## <a name="develop"></a>Develop an Output Plugin
 
+It is simpel to create your own Output Plugin using Visual Studio.
+
 1. Create a Visual Studio class library project.
 2. Set target framework to "4.5.2".
 3. Add a reference to **BS.Plugin.V3** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
@@ -171,7 +173,7 @@ namespace BS.Plugin.V3.Utilities
 
 ## <a name="debug"></a>Debug Plugin Code
 
-If is simpel to debug your Plugin code using Visual Studio.
+It is also simpel to debug your Plugin code using Visual Studio.
 
 1. Install Bug Shooting on your developer machine.
 2. Create a sub directory inside the Bug Shooting **Outputs** directory using name of your choise.
