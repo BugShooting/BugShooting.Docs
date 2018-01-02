@@ -76,10 +76,10 @@ namespace BS.Plugin.V3.Output
     // Description of the Output Plugin.
     string Description { get }
     
-    // Symbol of the Output Plugin (Size 64 x 64 pixels).
+    // Large symbol of the Output Plugin (Size 64 x 64 pixels).
     Image Image64 { get }
     
-    // Symbol of the Output Plugin (Size 16 x 16 pixels)
+    // Small symbol of the Output Plugin (Size 16 x 16 pixels)
     Image Image16 { get }
     
     // Get the value indicating whether the Output is editable by the user.
