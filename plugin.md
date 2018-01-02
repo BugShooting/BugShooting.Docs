@@ -4,6 +4,7 @@
 * [Requirements](#requirements)
 * [Examples](#examples)
 * [Reference](#reference)
+* [Debug your Plugin](#debug)
 * [Deploy a NuGet Package](#deploynuget)
 * [Manual installation](#manualinstallation)
 
@@ -164,6 +165,10 @@ namespace BS.Plugin.V3.Utilities
   
 }
 ```
+
+## <a name="debug"></a>Debug your Plugin
+
+XXXXXXXXXXXXXXXXXXXX
 
 ## <a name="deploynuget"></a>Deploy a NuGet Package
 
