@@ -15,7 +15,7 @@ Bug Shooting provides an API to create custom Outputs. The API is written in .NE
 ## API Reference
 For using Output API add a reference to **BS.Output.dll** to your .NET project. You will find this assembly in the installation directory of Bug Shooting. You need also references to **System.Drawing** and **System.Windows.Forms**.
 
-You can also get the reference using NuGet Package. Search for "Bug Shooting Output API" in the NuGet Package Manager or visit NuGet.org.
+You can also get the reference using NuGet Package. Search for "**Bug Shooting Output API**" in the NuGet Package Manager or visit NuGet.org.
 
 ### IOutput (Interface)
 Provides an interface for an Output entity.
@@ -71,7 +71,7 @@ Provides an interface for send options of an Output.
 > Namespace: BS.Output
 
 ## Install custom Output
-1. Navigate to the Custom Output directory of Bug Shooting (%ProgramData%\Bug Shooting 2\Outputs).
+1. Navigate to the Custom Output directory of Bug Shooting (**%ProgramData%\Bug Shooting 2\Outputs**).
 2. Create a sub directory in the Custom Output directory. Use any name for the directory (e.g. the name of the AddIn).
 3. Copy your Output assembly to this new directory.
 4. Restart Bug Shooting.
