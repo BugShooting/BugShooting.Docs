@@ -47,13 +47,13 @@ Provides a generic base class for an Output Add-In. This class provides methods 
 **SendAsync**|Send an image to an Output. This method is called after the call of the GetSendOptions-Method and contains code for perform the sending operations.
  
 ### SendResult (Class)
-An instance of this classis passed to the SendImageAsync method and is used to handle the result of the sending operation.
+An instance of this class is passed to the SendImageAsync method and is used to handle the result of the sending operation.
 
 > Namespace: BS.Output
 
 **Result**|State of the sending result. Possible values are Success, Failed and Canceled. This property must be set during the execution of the SendImageAsync method.
 **ResultMessage**|Text message which will shown to the user if the Result not Success.
-**UpdateOutupt**|This property can be used if the vlues of the Output which is passed to the SendAsync method must be updated after the send operation. E.g. if you entered login credentials during the sending operation and you want remember the user name an the password for further sending operations, you can set an new instance of your Output (which include the ne values) to the UpdateOutput property. After te SendAsync method is finished this new Output instance will be stored in the Output settings.
+**UpdateOutput**|This property can be used if the values of the Output which is passed to the SendAsync method must be updated after the send operation. E.g. if you entered login credentials during the sending operation and you want remember the user name an the password for further sending operations, you can set an new instance of your Output (which include the new values) to the UpdateOutput property. After the SendAsync method is finished this new Output instance will be stored in the Output settings.
  
 ### OutputValue (Class)
 Provides a key value pair class which keep a value for serialization and deserialization of an Output.
