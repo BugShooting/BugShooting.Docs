@@ -123,8 +123,8 @@ namespace BS.Plugin.V3.Utilities
     // Get the file bytes of an image for a specific file format.
     byte[] GetFileBytes(string FileFormat, ImageData ImageData)
     
-    // Get the file extention for a specific file format.
-    string GetFileExtention(string FileFormat)
+    // Get the file extension for a specific file format.
+    string GetFileExtension(string FileFormat)
     
     // Get the MIME type for a specific file format.
     string GetMimeType(string FileFormat)
