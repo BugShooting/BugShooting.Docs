@@ -37,7 +37,7 @@ An instance of this classis passed to the SendImageAsync method and is used to h
 
 **Result**|State of the sending result. Possible values are Success, Failed and Canceled. This property must be set during the execution of the SendImageAsync method.
 **ResultMessage**|Text message which will shown to the user if the Result not Success.
-**UpdateOutupt**|This property can be used if the vlues of the Output which is passed to the SendImageAsync method must be updated after the send operation. E.g. if you entered login credentials during the sending operation and you want remember the user name an the password for further sending operations, you can set an new instance of your Output (which include the ne values) to the UpdateOutput property. After te SendImageAsync method is finished this new Output instance will be stored in the Output settings.
+**UpdateOutupt**|This property can be used if the values of the Output which is passed to the SendImageAsync method must be updated after the send operation. E.g. if you entered login credentials during the sending operation and you want remember the user name an the password for further sending operations, you can set an new instance of your Output (which include the ne values) to the UpdateOutput property. After te SendImageAsync method is finished this new Output instance will be stored in the Output settings.
 
 ### OutputValue
 Provides a key value pair class which keep a value for serialization and deserialization of an Output.
