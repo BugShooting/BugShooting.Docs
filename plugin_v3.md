@@ -113,6 +113,7 @@ namespace BS.Plugin.V3.Output
 namespace BS.Plugin.V3.Utilities
 {
 
+ // Provides an interface for a file format.
  interface IFileFormat
  {
     // ID of the file format.
