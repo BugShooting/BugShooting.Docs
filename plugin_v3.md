@@ -113,21 +113,31 @@ namespace BS.Plugin.V3.Output
 namespace BS.Plugin.V3.Utilities
 {
 
+ interface IFileFormat
+ {
+    // ID of the file format.
+    Guid ID { get }
+
+    // Display name of the file format.
+    string Name { get}
+
+    // File extension of the file format.
+    string FileExtension { get }
+    
+    // Mime-type of the file format.
+    string MimeType { get }
+
+ }
+
   // Provides helper methods for file operations.
   class FileHelper
   {
 
     // Get a list of supported file formats.
-    List<string> GetFileFormats()
+    IEnumerable<IFileFormat> GetFileFormats()
 
     // Get the file bytes of an image for a specific file format.
-    byte[] GetFileBytes(string FileFormat, ImageData ImageData)
-    
-    // Get the file extension for a specific file format.
-    string GetFileExtension(string FileFormat)
-    
-    // Get the MIME type for a specific file format.
-    string GetMimeType(string FileFormat)
+    byte[] GetFileBytes(Guid FileFormatID, ImageData ImageData)
    
   }
   
