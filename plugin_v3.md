@@ -216,7 +216,7 @@ For example package definitions see Output implementations on [https://github.co
 You can also install the Output files manually into your Bug Shooting installation.
 
 1. Navigate to the **Outputs** directory of your Bug Shooting installation.
-> Located here: **%ProgramData%\Bug Shooting 2\Outputs**
+> Located here: %ProgramData%\Bug Shooting 2\\**Outputs**
 2. Create a sub directory inside the **Outputs** directory using name of your choise.
 > Example: %ProgramData%\Bug Shooting 2\Outputs\\**MyOutput**
 3. Copy your Output assembly and all necessary files to this new directory.
