@@ -138,7 +138,7 @@ namespace BS.Plugin.V3.Utilities
     IEnumerable<IFileFormat> GetFileFormats()
     
      // Get a file format.
-    IFileFormat GetFileFormats(Guid FileFormatID)
+    IFileFormat GetFileFormat(Guid FileFormatID)
 
     // Get the file bytes of an image for a specific file format.
     byte[] GetFileBytes(Guid FileFormatID, ImageData ImageData)
