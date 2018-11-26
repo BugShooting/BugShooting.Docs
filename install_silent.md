@@ -1,6 +1,6 @@
 # Silent Installation
 
-Bug Shooting installer supports silent installation and uninstallation.
+Bug Shooting installer supports silent installation.
 
 ## Available Switches
 
@@ -14,3 +14,15 @@ Bug Shooting installer supports silent installation and uninstallation.
 ## Example
 
 *BugShooting_Setup.exe /SILENT /INSTALLPATH="C:\Program Files\Bug Shooting 2" /LINKDESKTOP=1*
+
+# Silent uninstallation
+
+Bug Shooting uninstaller supports silent uninstallation.
+
+**/?, /HELP** | Shows available command line switches.
+**/SILENT** | Run a silent uninstallation
+
+## Example
+
+*%PROGRAMFILES%\Bug Shooting 2\Uninstaller.exe /SILENT*
+
