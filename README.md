@@ -6,4 +6,5 @@ Bug Shooting is a simple but very powerful screenshot tool. Using Bug Shooting y
 
 - [Plugin API](plugin_v3)
 - [Silent Installation](install_silent)
+- [Unattended License Activation](unattended_license_activation)
 - [Installation for Remote Desktop Services](install_rdp)
