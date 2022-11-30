@@ -176,7 +176,7 @@ namespace BS.Plugin.V3.Utilities
 It is simpel to create your own Output Plugin using Visual Studio.
 
 1. Create a Visual Studio class library project.
-2. Set target framework to "4.5.2".
+2. Set target framework to "4.8".
 3. Add a reference to **BS.Plugin.V3** from Nuget package [BugShooting.Plugin.V3](https://www.nuget.org/packages/BugShooting.Plugin.V3).
 3. Add a reference to **System.Drawing** and **System.Windows.Forms**
 4. Set **Copy Local** setting of **BS.Plugin.V3** reference to **False**.
