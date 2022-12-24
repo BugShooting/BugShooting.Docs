@@ -188,13 +188,15 @@ It is simpel to create your own Output Plugin using Visual Studio.
 It is also simpel to debug your Plugin code using Visual Studio.
 
 1. Install Bug Shooting on your developer machine.
-2. Create a sub directory inside the Bug Shooting **Outputs** directory using name of your choise.
+2. Create a sub directory **Outputs** inside the Bug Shooting data directory.
+> Example: %ProgramData%\Bug Shooting 2\\**Outputs**
+3. Create a sub directory inside the Bug Shooting **Outputs** directory using name of your choise.
 > Example: %ProgramData%\Bug Shooting 2\Outputs\\**MyOutput**
-3. Set the output derectory of your Plugin project to the previously created directory.
-4. Select "**Start external program**" as start action for your Plugin project and set the value to Bug Shooting executable.
+4. Set the output derectory of your Plugin project to the previously created directory.
+5. Select "**Start external program**" as start action for your Plugin project and set the value to Bug Shooting executable.
 > Located here: %ProgramFiles%\Bug Shooting 2\\**BugShooting2.exe**
-5. Make sure the setting **Copy Local** of **BS.Plugin.V3** reference is set to **False**.
-6. Start debugging your Plugin project.
+6. Make sure the setting **Copy Local** of **BS.Plugin.V3** reference is set to **False**.
+7. Start debugging your Plugin project.
 
 ## <a name="deploynuget"></a>Deploy a NuGet Package
 
@@ -214,8 +216,8 @@ For example package definitions see Output implementations on [https://github.co
 
 You can also install the Output files manually into your Bug Shooting installation.
 
-1. Navigate to the **Outputs** directory of your Bug Shooting installation.
-> Located here: %ProgramData%\Bug Shooting 2\\**Outputs**
+1. Create a sub directory **Outputs** inside the Bug Shooting data directory.
+> Example: %ProgramData%\Bug Shooting 2\\**Outputs**
 2. Create a sub directory inside the **Outputs** directory using name of your choise.
 > Example: %ProgramData%\Bug Shooting 2\Outputs\\**MyOutput**
 3. Copy your Output assembly and all necessary files to this new directory.
